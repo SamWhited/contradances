@@ -1,11 +1,7 @@
-\documentclass[a7paper]{contracard}
+\documentclass[medium]{contracard}
 
-% TODO: Add this to contracard
-\newcommand*{\notes}[1]{
-	\vspace{\fill}
-	\begin{flushleft}
-		{\footnotesize \textbf{Notes} #1}
-	\end{flushleft}
+\newcommand*{\definemove}[2]{
+	\ignorespaces\textit{#1}\unskip\ — \ignorespaces#2\unskip
 }
 
 \usepackage{fontspec}
@@ -49,19 +45,39 @@
 	\move[4]{Partner right hand balance}
 	\move[4]{box the gnat}
 	\move[8]{½ hey with hands}
-	\move{Partner balance, and swing}
+	\move[16]{Partner balance, and swing}
+\end{contra}
+
+\begin{contra}{Troy Lee's Bingo}{John Nance}{Duple becket}
+	\move[8]{Blackberry jam}
+	\move[8]{Circle left $\times 1$}
+	\swing*[Partner]{16}
+
+	\move[8]{Bingo petro}
+	\swing*[Neighbor]{8}
+	\ladieschain
+	\move[8]{Deviled eggs}
+
+	\notes{%
+		\definemove{Blackberry jam}{LL forward, hip bump neighbor, back.}\newline%
+		\definemove{Bingo petro}{B\&P; shout `bingo' for clap}\newline%
+		\definemove{Deviled eggs}{men $\times$, then right diagonal while ladies
+		$\times$ left diagonal then across. Shout `Troy Lee!'}%
+	}
+
 \end{contra}
 
 \begin{contra}{Code's Compiling}{Sam Whited}{Duple becket}
 	\move[8]{Neighbor do-si-do}
-	\move[8]{Mad robin}
-	\move{Shadow swing}
+	\move[8]{Partner see saw}
+	\move[16]{Shadow swing}
 	\move[8]{Balance and petronella}
 	\move[8]{Balance and petronella}
 	\move[8]{Partner swing}
 	\move[8]{Left diagonal: Right and left through}
-	\notes{Double progression, advanced. Don't need to look at neighbor in mad
-	robin. See saw works too. Make sure lines have lots of space for do-si-do.}
+	\notes{Double progression, advanced. Don't need to stop and face neighbor in
+	see saw. Call it a mad robin if it makes you feel better. Make sure lines have
+  lots of space for do-si-do.}
 \end{contra}
 
 \part{\partfont Duple improper}
@@ -81,18 +97,17 @@
 \end{contra}
 
 \begin{contra}{Swing-a-Doodle}{Don Armstrong}{Duple improper}
-	\move{Partner balance and swing (end facing down)}
+	\move[16]{Partner balance and swing (end facing down)}
 	\move[8]{Down in 2, 1's turn as a couple, 2's cast out and up to 1's}
-	% TODO: Fix hanging indents in contracard package
-	\move[8]{\hspace*{\fill}\\*\hspace*{1.5em}Up in 4, bend the line}
-	\move{Balance and swing neighbor}
+	\move[8]{Up in 4, bend the line}
+	\move[16]{Balance and swing neighbor}
 	\move[8]{½ promenade across}
 	\move[8]{Do-si-do across}
 	\notes{Advanced}
 \end{contra}
 
 \begin{contra}{Simplicity Swing}{Becky Hill}{Duple improper}
-	\move{Neighbor balance and swing}
+	\move[16]{Neighbor balance and swing}
 	\move[8]{Circle left ¾}
 	\move[8]{Partner swing}
 
@@ -105,7 +120,7 @@
 \end{contra}
 
 \begin{contra}{ABC}{Erik Hoffman}{Duple improper}
-	\move{Neighbor balance and swing}
+	\move[16]{Neighbor balance and swing}
 	\move[8]{Right and left through}
 	\move[8]{Right and left through back}
 
@@ -118,7 +133,7 @@
 \end{contra}
 
 \begin{contra}{Small Potatoes}{Jim Kitch}{Duple improper}
-	\move{Neighbor balance and swing}
+	\move[16]{Neighbor balance and swing}
 	\move[8]{Circle left all the way}
 	\move[8]{Ladies chain}
 	\move[8]{Ladies do-si-do}
@@ -128,18 +143,49 @@
 	\move[8]{Next neighbor do-si-do}
 \end{contra}
 
+\begin{contra}{Trip to Atlanta}{John Nance}{Duple improper}
+	\allemande*[Neighbor \#1]{8}{right 1½}
+	\swing*[Neighbor \#2]{8}
+	\promenade{8}
+	\ladieschain
+
+	\move[8]{Pass through across}
+	\swing*[Partner]{8}
+	\move[6]{Circle left ¾}
+	\move[2]{Pass through up and down}
+	\dosido[New neighbor \#1]{8}
+
+	\notes{Double progression}
+\end{contra}
+
 \begin{contra}{Gypsy Road}{Seth Tepfer}{Duple improper}
-	\move{Neighbor gypsy and swing}
+	\move[16]{Neighbor gypsy and swing}
 	\move[8]{Long lines}
 	\move[8]{Gents allemande left 1½}
-	\move{Partner balance and swing}
+	\move[16]{Partner balance and swing}
 	\move[4]{Circle left ½}
 	\move[4]{Ladies roll partner away with a ½ sashay}
-	% TODO: Go look this one up and fix formatting on this bit
 	\move[3]{Face across, neighbor ½ gypsy}
 	\move[2]{Single file prom CW 1 place}
 	\move[3]{Pass neighbor right}
-	%\notes{CC BY-NC 3.0}
+	\notes{CC BY-NC 3.0}
+\end{contra}
+
+\begin{contra}{Whirling dervish}{Sam Whited}{Duple improper}
+	\gypsy[neighbor 1¾]{8}
+	\move[8]{Men half hey ricochet  (ladies cross)%
+		\moveindex{Hey For Four}%
+		\moveindex{Half Hey}%
+	}
+	\swing[your partners all]{16}
+	\move[8]{Spin like a Whirling Dervish\moveindex{Whirling Dervish}}
+	\balanceand\longpetronella
+	\balanceand\move[8]{gents roll neighbor away with a half sashay\moveindex{Half
+	Sashay}\moveindex{Roll Away}\moveindex{Roll Away\ldots Half Sashay}}
+	\newline\move[8]{Balance neighbor and gypsy left 1 time to new
+	neighbors\moveindex{Balance}\moveindex{Gypsy}\moveindex{Gypsy Left}}
+	\notes{A ``Whirling Dervish" is just a circle left in single file except that
+	you should spin over your left shoulder the entire time you're doing it.}
 \end{contra}
 
 % TODO: Identify
@@ -179,20 +225,45 @@
 	\move[8]{Ladies chain}
 	\notes{CC BY-NC 3.0}
 \end{contra}
+
 \setlength{\phrasevspace}{\phrasevspaceold}
 \setcounter{dancephraselength}{32}
-
+\clearpage
 \part{\partfont Mescolanza}
 
 \begin{contra}{No More Worthless Swings}{Seth Tepfer}{Mescolanza}
 	\move[8]{Long lines}
 	\move[8]{Up \&\ down ladies allemande left 1½}
-	\move{Neighbor balance and swing}
+	\move[16]{Neighbor balance and swing}
 	\move[4]{Gents left hand star ½ to partner}
 	\move[4]{Allemande right ½}
 	\move[8]{Ladies left hand star all the way}
-	\move{Partner balance \&\ swing}
+	\move[16]{Partner balance \&\ swing}
 	\notes{CC BY-NC 3.0}
+\end{contra}
+
+\part{\partfont Waltz Mixer}
+
+\begin{contra}{Turn Around Waltz}{Sam Whited}{Circle waltz}
+	\setlength{\phrasevspace}{0em}
+	\setcounter{dancepartlength}{12}
+	\setcounter{dancephraselength}{24}
+	\showcountafter
+
+	\move[6]{Roll lady on left away}
+	\move[6]{Forward and back}
+	\move[6]{Roll lady on left away}
+	\move[6]{Forward and back}
+	\move[6]{Hands out and in (face out)}
+	\move[6]{Hands in and out (face in)}
+	\move[6]{Hands out and in ladies cast right}
+	\move[6]{Parallels (or free waltz)}
+
+	\notes{Repeat \textbf{BABB}(\textbf{Y}?). Doing it in circles of 4 or 8
+	couples brings you back to your original partner at the end; if you have 3 or
+	7 put partner on your left to start. Get people into square formation, then
+	ask them to merge squares instead of finding 7 other people. Meant to be
+	danced to the Nanci Griffith cover of ``Turn Around".}
 \end{contra}
 
 \end{document}
