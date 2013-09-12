@@ -9,15 +9,18 @@
 \newcommand*{\dingbatsfontfamily}{DejaVu Sans}
 
 \defaultfontfeatures{Mapping=tex-text, Ligatures=Common}
-\setmainfont[Mapping=tex-text]{\defaultfontfamily}
+\setmainfont[Mapping=tex-text, RawFeature={+lnum}]{\defaultfontfamily}
 
 \newcommand*{\ordn}[1]{{\fontspec[RawFeature={+ordn}]{\defaultfontfamily}#1}}
 \newcommand*{\titl}[1]{{\fontspec[RawFeature={+titl}]{\defaultfontfamily}#1}}
 \newcommand*{\ornm}[1]{{\fontspec[RawFeature={+ornm}]{\defaultfontfamily}#1}}
+\newcommand*{\tnum}[1]{{\fontspec[RawFeature={+tnum}]{\defaultfontfamily}#1}}
+\newcommand*{\onum}[1]{{\fontspec[RawFeature={+onum}]{\defaultfontfamily}#1}}
+\newcommand*{\lnum}[1]{{\fontspec[RawFeature={+lnum}]{\defaultfontfamily}#1}}
 
 \newcommand*{\dingbat}[1]{{\fontspec{\dingbatsfontfamily}#1}}
 
-\newfontfamily\partfont[Mapping=tex-text, RawFeature={+titl}]{\defaultfontfamily}
+\newfontfamily\partfont[Mapping=tex-text, RawFeature={+titl,+onum,+liga,+dlig,+cpsp}]{\defaultfontfamily}
 
 \begin{document}
 
